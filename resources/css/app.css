@@ -1,0 +1,31 @@
+@import "/node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none !important;
+} /*<-- This Line right here!*/
+
+/* Custom Css */
+@layer components {
+    [x-cloak] {
+        display: none;
+    }
+
+    .svg-icon {
+        width: 1em;
+        height: 1em;
+    }
+
+    .svg-icon path,
+    .svg-icon polygon,
+    .svg-icon rect {
+        fill: #333;
+    }
+
+    .svg-icon circle {
+        stroke: #4691f6;
+        stroke-width: 1;
+    }
+}
