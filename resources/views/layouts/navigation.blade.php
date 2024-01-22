@@ -1,11 +1,9 @@
 <aside class="md:left-0 py-4 px-6 z-20 w-64 hidden overflow-y-auto bg-white dark:bg-gray-800 md:block flex-shrink-0 shadow-xl">
 	{{-- <div class="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto"> --}}
-		
-			<a class="md:block text-left md:pb-2 mr-0 inline-block whitespace-nowrap text-lg text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-700 uppercase font-bold p-4 px-0"
+			<a class="md:block mr-0 text-left inline-block whitespace-nowrap text-lg text-indigo-700 uppercase font-bold py-1 px-0"
 				href="{{route('dashboard')}}">
 				{{config('app.name')}}
 			</a>
-
 		{{-- Include side menu --}}
 		@include('layouts.listmenu')
 	{{-- </div> --}}

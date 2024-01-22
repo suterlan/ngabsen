@@ -22,7 +22,7 @@
             <li class="flex">
                <x-dropdown align="right" width="48">
                   <x-slot name="trigger">
-                     <a class="md:text-amber-600 block px-3">
+                     <a class="md:text-amber-600 block">
                         <i class="fa-solid fa-bell"></i>
                      </a>	
                   </x-slot>
@@ -37,7 +37,7 @@
             <li class="relative">
                <x-dropdown align="left" width="48">
                   <x-slot name="trigger">
-                     <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-300 bg-indigo-100 dark:bg-indigo-800 hover:text-gray-800 dark:hover:text-gray-50 focus:outline-none transition ease-in-out duration-150">
+                     <button class="inline-flex items-center py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-50 focus:outline-none transition ease-in-out duration-150">
                            <div>{{ Auth::user()->email }}</div>
    
                            <div class="ms-1">
