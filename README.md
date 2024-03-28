@@ -24,11 +24,11 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-# Laravel Starter Template Auth
+# Ngabsen
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-Laravel starter template dashboard and auth dibuat dengan menggunakan laravel versi 10 dan tailwindcss  
+Aplikasi absensi berbasis web untuk penerapan absensi secara online dengan menggunakan foto selfi dan lokasi
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -54,7 +54,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 1. Clone the repo
 ```sh
-git clone https://github.com/suterlan/laravel-starter-auth.git your_project
+git clone https://github.com/suterlan/ngabsen.git your_project
 ```
 
 2. Navigate to the cloned project folder:
