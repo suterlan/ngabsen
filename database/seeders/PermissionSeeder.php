@@ -13,9 +13,29 @@ class PermissionSeeder extends Seeder
      */
     public function run(): void
     {
-        Permission::create(['name'  => 'menu-undangan']);
-        Permission::create(['name'  => 'menu-users']);
-        Permission::create(['name'  => 'menu-roles']);
-        Permission::create(['name'  => 'menu-permission']);
+        // User
+        Permission::create(['name'  => 'view-users']);
+        Permission::create(['name'  => 'create-users']);
+        Permission::create(['name'  => 'store-users']);
+        Permission::create(['name'  => 'edit-users']);
+        Permission::create(['name'  => 'update-users']);
+        Permission::create(['name'  => 'delete-users']);
+        Permission::create(['name'  => 'change-role-users']);
+
+        // Role
+        Permission::create(['name'  => 'view-role']);
+        Permission::create(['name'  => 'create-role']);
+        Permission::create(['name'  => 'store-role']);
+        Permission::create(['name'  => 'edit-role']);
+        Permission::create(['name'  => 'update-role']);
+        Permission::create(['name'  => 'delete-role']);
+
+        // Pemission
+        Permission::create(['name'  => 'view-permission']);
+        Permission::create(['name'  => 'create-permission']);
+        Permission::create(['name'  => 'store-permission']);
+        Permission::create(['name'  => 'edit-permission']);
+        Permission::create(['name'  => 'update-permission']);
+        Permission::create(['name'  => 'delete-permission']);
     }
 }

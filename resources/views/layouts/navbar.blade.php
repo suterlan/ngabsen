@@ -1,7 +1,7 @@
 @if (isset($header))
-  <nav class="z-10 py-4 top-0 bg-white shadow-md dark:bg-slate-800 md:bg-white">
-      <div class="container flex items-center justify-between h-full px-4 mx-auto text-indigo-600 dark:text-indigo-300">
-         <a class="md:text-slate-700 dark:text-gray-200 text-sm uppercase hidden md:inline-block font-semibold" href="{{ route('dashboard') }}">
+  <nav class="z-10 py-4 sticky top-0 bg-white shadow-md dark:bg-slate-800 md:bg-white">
+      <div class="container flex items-center justify-between h-full px-6 mx-auto text-indigo-600 dark:text-indigo-300">
+         <a class="md:text-slate-700 dark:text-gray-200 text-sm uppercase hidden md:inline-block font-semibold" href="/">
             {{ $header }}
          </a>
          <div>
@@ -22,8 +22,8 @@
             <li class="flex">
                <x-dropdown align="right" width="48">
                   <x-slot name="trigger">
-                     <a class="md:text-amber-600 block">
-                        <i class="fa-solid fa-bell"></i>
+                     <a class="md:text-amber-600 block cursor-pointer">
+                        <i class="fa-solid fa-bell fa-shake"></i>
                      </a>	
                   </x-slot>
    
@@ -34,7 +34,7 @@
                   </x-slot>
                </x-dropdown>	
             </li>
-            <li class="relative">
+            <li class="hidden sm:flex">
                <x-dropdown align="left" width="48">
                   <x-slot name="trigger">
                      <button class="inline-flex items-center py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-50 focus:outline-none transition ease-in-out duration-150">

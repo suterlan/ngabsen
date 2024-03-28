@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             RoleSeeder::class,
             PermissionSeeder::class,
+            JabatanSeeder::class,
 
         ]);
 
@@ -36,15 +37,15 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'admin@admin.com',
         // ]);
-        \App\Models\User::factory()->create()->assignRole('karyawan');
-        \App\Models\User::factory()->create()->assignRole('karyawan');
-        \App\Models\User::factory()->create()->assignRole('karyawan');
-        \App\Models\User::factory()->create()->assignRole('karyawan');
-        \App\Models\User::factory()->create()->assignRole('karyawan');
-        \App\Models\User::factory()->create()->assignRole('karyawan');
-        \App\Models\User::factory()->create()->assignRole('karyawan');
-        \App\Models\User::factory()->create()->assignRole('karyawan');
-        \App\Models\User::factory()->create()->assignRole('karyawan');
-        \App\Models\User::factory()->create()->assignRole('karyawan');
+        \App\Models\User::factory()->create()->assignRole('user');
+        \App\Models\User::factory()->create()->assignRole('user');
+        \App\Models\User::factory()->create()->assignRole('user');
+        \App\Models\User::factory()->create()->assignRole('user');
+        \App\Models\User::factory()->create()->assignRole('user');
+        \App\Models\User::factory()->create()->assignRole('user');
+        \App\Models\User::factory()->create()->assignRole('user');
+        \App\Models\User::factory()->create()->assignRole('user');
+        \App\Models\User::factory()->create()->assignRole('user');
+        \App\Models\User::factory()->create()->assignRole('user');
     }
 }

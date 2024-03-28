@@ -6,7 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="shortcut icon" href="../../assets/img/favicon.ico" />
 
-        <title>{{ config('app.name', 'WilujengNikah') }}</title>
+        <title>{{ config('app.name', 'Ngabsen') }}</title>
 
         <link
         rel="stylesheet"
@@ -32,24 +32,30 @@
                     {{$stats ?? ''}}
 
                     @if (session('success'))
-                        <x-alert class="bg-teal-500">
+                        <x-notification class="text-teal-600 bg-teal-200 dark:bg-teal-100 bg-opacity-80 backdrop-blur-sm">
                             <b class="capitalize">Sukses!</b>
                             <p>{{session('success')}}</p>
-                        </x-alert>
+                        </x-notification>
                     @endif
                     @if (session('failed'))
-                        <x-alert class="bg-red-500">
+                        <x-notification class="text-rose-600 bg-rose-200 bg-opacity-80 backdrop-blur-sm">
                             <b class="capitalize">Gagal!</b>
                             <p>{{session('failed')}}</p>
-                        </x-alert>
+                        </x-notification>
                     @endif
 
-                    <div class="px-4 md:px-10 mx-auto w-full">                        
+                    <div class="px-4 md:px-8 mx-auto w-full">                        
                         
                         {{$slot}}  
 
                     </div>
                 </main>
+                {{-- End Page Content --}}
+
+                {{-- Mobile Menu (Bottom Navbar) --}}
+                @include('layouts.mobile-menu')
+                {{-- End Mobile Menu (Bottom Navbar) --}}
+
             </div>
         </div>
         @stack('scripts')

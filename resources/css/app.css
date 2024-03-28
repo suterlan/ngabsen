@@ -1,4 +1,7 @@
 @import "/node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "/node_modules/leaflet/dist/leaflet.css";
+@import "/node_modules/leaflet-geosearch/dist/geosearch.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
